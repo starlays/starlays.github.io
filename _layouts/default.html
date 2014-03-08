@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }}</title>
+        {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+        <meta name="author" content="{{ site.author.name }}">
+        <!-- enable responsive viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- bootstrap style -->
+        <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- page style -->
+        <link href="/assets/css/page.css" rel="stylesheet">
+        <!-- JS -->
+        <script src="/assets/scripts/scripts.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <img src="/assets/img/picture.jpg" alt="Florentin Lazar" class="img-circle pull-left" style="width: 140px; height: 140px;">
+                <h1>Florentin Lazar <small>Homepage</small></h1>
+            </div>
+            <div class="content">
+                {{ content }}
+            </div>
+            <div class="footer">
+                <footer>&copy; Florentin Lazar 2014</footer>
+            </div>
+        </div>
+    </body>
+</html>

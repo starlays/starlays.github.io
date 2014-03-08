@@ -1,0 +1,19 @@
+.content {
+    padding: 50px 0px;
+}
+
+.footer {
+    position: relative;
+}
+
+@media all and (max-width: 600px) {
+
+    .pull-left {
+        float:none !important;
+    }
+    .img-circle {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
